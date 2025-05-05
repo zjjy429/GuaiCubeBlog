@@ -1,0 +1,61 @@
+# ==================== #
+# 操作系统/编辑器生成文件 #
+# ==================== #
+.DS_Store               # macOS 系统文件
+Thumbs.db               # Windows 缩略图缓存
+Desktop.ini            # Windows 文件夹配置
+*.log                   # 通用日志文件
+*.tmp                   # 临时文件
+*.swp                   # Vim 交换文件
+~$*                     # Office 临时文件
+
+# ============= #
+# Node.js 后端 #
+# ============= #
+node_modules/           # 依赖目录
+npm-debug.log          # npm 调试日志
+yarn-error.log         # yarn 错误日志
+package-lock.json      # npm 锁文件（如使用 yarn 可删除此行）
+yarn.lock              # yarn 锁文件（如使用 npm 可删除此行）
+.env                   # 环境变量文件（切勿提交！）
+.env.local             # 本地覆盖的环境变量
+.env.*.local           # 其他环境变量覆盖
+.elasticbeanstalk/     # AWS 部署配置
+
+# ============= #
+# Vue.js 前端 #
+# ============= #
+dist/                   # 构建输出目录
+build/                  # 构建中间文件
+.cache/                # 开发缓存（如 Vite）
+.temp/                 # 临时生成文件（如 Nuxt）
+*.min.js               # 压缩后的 JS
+*.min.css              # 压缩后的 CSS
+
+# ================== #
+# 开发工具/IDE 配置 #
+# ================== #
+.idea/                  # JetBrains IDE 配置
+.vscode/                # VS Code 配置
+!.vscode/settings.json  # 允许提交共享的 VS Code 设置
+!.vscode/extensions.json # 允许提交推荐的插件
+*.suo                   # VS 用户选项
+*.ntvs*                 # NTVS (Node.js Tools for Visual Studio)
+
+# =============== #
+# 测试和覆盖率报告 #
+# =============== #
+coverage/              # 测试覆盖率报告
+.nyc_output/           # NYC 覆盖率输出
+test-results/          # 测试结果（如 Jest）
+cypress/screenshots/   # Cypress 截图
+cypress/videos/        # Cypress 录屏
+
+# ============== #
+# 其他通用规则 #
+# ============== #
+.sass-cache/           # Sass 缓存
+/typings/             # TypeScript 类型定义（如手动安装）
+.serverless/          # Serverless 部署缓存
+.awcache/             # AWS 缓存
+.quasar/              # Quasar 框架生成文件
